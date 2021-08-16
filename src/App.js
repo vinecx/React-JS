@@ -33,7 +33,7 @@ function App() {
   }
 
   const deleteAll = () => {
-    deleteAllUsers() .then(response => {
+    deleteAllUsers().then(response => {
       if(response.ok){
         fetchAllUsers();
       }
