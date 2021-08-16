@@ -15,8 +15,7 @@ function App() {
 
   const userCreate = (e) => {
 
-      createUser(user)
-      .then(response => {
+      createUser(user).then(response => {
         if(response.ok){
           fetchAllUsers();
         }
@@ -24,8 +23,7 @@ function App() {
   }
 
   const fetchAllUsers = () => {
-    getAllUsers()
-      .then(users => {
+    getAllUsers().then(users => {
         console.log(users)
         setUsers(users);
         setNumberOfUsers(users.length)
