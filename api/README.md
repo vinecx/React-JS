@@ -1,2 +1,2 @@
-# react-nodejs-example
-Example Project demonstrating how to develop React application with Nodejs 
+Api node.js
+Example Project React js as front and back with Nodejs 
