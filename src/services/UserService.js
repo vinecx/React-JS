@@ -9,7 +9,6 @@ export async function getAllUsers() {
     }
     
 }
-
 export async function deleteAllUsers() {
     const response = await fetch('https://vinecx-api.herokuapp.com/api/users', {
         method: 'delete',
@@ -17,7 +16,6 @@ export async function deleteAllUsers() {
     });
     return await response.json();
 }
-
 export async function deleteUsers(id) {
     const response = await fetch(`https://vinecx-api.herokuapp.com/api/user/${id}`, {
         method: 'delete',
@@ -26,7 +24,6 @@ export async function deleteUsers(id) {
     });
     return await response.json();
 }
-
 export async function createUser(data) {
     const response = await fetch(`https://vinecx-api.herokuapp.com/api/user`, {
         method: 'POST',
@@ -34,4 +31,4 @@ export async function createUser(data) {
         body: JSON.stringify({user: data})
       })
     return await response.json();
-}
+    }
